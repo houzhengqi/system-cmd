@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\desktop\system权限\x64Release\TokenTheft.exe</FullPath>
+      <FullPath>D:\desktop\system-cmd\x64Release\TokenTheft.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

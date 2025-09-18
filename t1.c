@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <tlhelp32.h>
+#include <stdio.h>
 //DEV-C++ 如果不能正常编译，请加入以下参数
 //-DUNICODE -D_UNICODE -ladvapi32 -lkernel32
 void DupWinlogonToken(PHANDLE pTok){
@@ -25,13 +26,16 @@ void DupWinlogonToken(PHANDLE pTok){
 		CloseHandle(hProc);
 	}
 	CloseHandle(hSnap);
+	return;
 }
 int main(){
     HANDLE hSysTok=NULL;
     DupWinlogonToken(&hSysTok);
 	STARTUPINFO si={0};
 	PROCESS_INFORMATION pi={0};
-    LPCWSTR lpCmd=L"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe";
-	if(!CreateProcessWithTokenW(hSysTok,LOGON_WITH_PROFILE,lpCmd,NULL,0,NULL,NULL,&si,&pi)) ExitProcess(GetLastError());
+	if(hSysTok==NULL) ExitProcess(0);
+	LPCWSTR lp=L"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe";
+	if(!CreateProcessWithTokenW(hSysTok,LOGON_WITH_PROFILE,lp,NULL,0,NULL,NULL,&si,&pi)) ExitProcess(GetLastError());
     ExitProcess(0);
+	return 0;
 }

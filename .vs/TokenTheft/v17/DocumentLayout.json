@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\desktop\\system-cmd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0D1EE9-4F6D-4A81-9E2F-79D38CB059F5}|TokenTheft.vcxproj|D:\\desktop\\system-cmd\\t1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D0D1EE9-4F6D-4A81-9E2F-79D38CB059F5}|TokenTheft.vcxproj|solutionrelative:t1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "t1.c",
+              "DocumentMoniker": "D:\\desktop\\system-cmd\\t1.c",
+              "RelativeDocumentMoniker": "t1.c",
+              "ToolTip": "D:\\desktop\\system-cmd\\t1.c",
+              "RelativeToolTip": "t1.c",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-18T09:57:49.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
